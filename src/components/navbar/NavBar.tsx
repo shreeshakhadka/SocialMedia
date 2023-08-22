@@ -1,4 +1,4 @@
-import "./Nav.css"
+import "./nav.css"
 import {Search, Person, Chat, Notifications} from "@mui/icons-material"
 
 
