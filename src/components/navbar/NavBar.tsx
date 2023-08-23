@@ -1,13 +1,16 @@
 import "./nav.css"
 import {Search, Person, Chat, Notifications} from "@mui/icons-material"
-
+import {Link} from 'react-router-dom'
 
 
 export default function NavBar() {
   return (
     <div className="navbarContainer">
         <div className="navbarLeft">
-            <span className="navbarLogo">Shreesha Khadka </span>
+            <Link to="/" style={{textDecoration:"none"}}>
+                <span className="navbarLogo">Shreesha Khadka </span>
+            </Link>
+
         </div>
         <div className="navbarCenter">
             <div className="navSearchBar">

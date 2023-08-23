@@ -11,18 +11,18 @@ export default function Register() {
                 </span>
             </div>
             <div className="registerRight">
-                <div className="registerBox">
-                    <input type="Text" placeholder="Enter Username" className="registerInput"/>
-                    <input type="email" placeholder="Enter email" className="registerInput"/>
-                    <input type="Password" placeholder="Enter password" className="registerInput"/>
-                    <input type="password" placeholder="Confirm password" className="registerInput"/>
+                <form className="registerBox">
+                    <input type="text" placeholder="Enter Username" required className="registerInput"/>
+                    <input type="email" placeholder="Enter email" required className="registerInput"/>
+                    <input type="Password" placeholder="Enter password" required minLength={6} className="registerInput"/>
+                    <input type="password" placeholder="Confirm password" required minLength={6} className="registerInput"/>
 
                     <button className="registerbtn">Sign Up</button>
                     <span className="loginUser">Already a User?</span>
 
                     <button className="loginRegisterButton">
                        Log into Account</button>
-                </div>
+                </form>
             </div>
         </div>
     </div>
