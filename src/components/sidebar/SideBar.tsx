@@ -79,10 +79,6 @@ export default function SideBar() {
                 <img className="sidebarFriendImg" src="/assets/1.jpg" alt=""/>
                 <span className="sidebarFriendName "> Shreesha Khadka</span>
             </li>
-            
-
-            
-
         </ul>
       </div>
     </div>

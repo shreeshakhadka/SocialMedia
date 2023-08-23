@@ -54,12 +54,15 @@
     display: flex;
     align-items: center;
 }
-.Icon{
-    width: 24px;
-    height: 24px;
-    margin-right: 5px;
-    cursor: pointer;
+.likeicon{
+    width: 30px;
+    height: 30px;
 }
+.loveicon{
+    width: 25px;
+    height: 25px;
+}
+
 .postLikeCounter{
     font-size: 15px;
 }
