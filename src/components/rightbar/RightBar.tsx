@@ -1,11 +1,12 @@
 import "./rightbar.css"
+import {School, Home, LocationOn} from "@mui/icons-material"
 
+export default function RightBar({profile}) {
 
-export default function RightBar() {
-  return (
-    <div className="rightbar">
-      <div className="rightbarWrapper">
-        <div className="birthdayContainer">
+  const HomeRightbar =() =>{
+    return(
+      <>
+       <div className="birthdayContainer">
           <img className="birthdayImg" src="assets/birthday.png" alt=""/>
           <span className="birthdayText"> 
           <b>Shreesha Khadka</b> and <b>3 other friends have a birthday today</b></span>
@@ -63,6 +64,107 @@ export default function RightBar() {
             <span className="rightbarUsername">Shreesha Khadka</span>
           </li>
         </ul>
+
+
+      </>
+    )
+  }
+
+
+  const ProfileRightbar =() => {
+    return(
+      <>
+
+      <div className="profileIntro">
+      <h4 className="rightbarTitle"> Intro</h4>
+      <div className="rightbarInfo">
+
+        <div className="rightbarInfoItem">
+          <School className="rightbarIcon"/>
+          <span className="rightbarInfoKey">Studies at: </span>
+          <span className="rightbarInfoValue">Clark University </span>
+        </div>
+
+        <div className="rightbarInfoItem">
+          <School className="rightbarIcon"/>
+          <span className="rightbarInfoKey">Studied at: </span>
+          <span className="rightbarInfoValue">Informatics College, Pokhara </span>
+        </div>
+
+        <div className="rightbarInfoItem">
+          <School className="rightbarIcon"/>
+          <span className="rightbarInfoKey">Studied at: </span>
+          <span className="rightbarInfoValue">Amarsingh Model Higher Secondary School</span>
+        </div>
+
+        <div className="rightbarInfoItem">
+          <School className="rightbarIcon"/>
+          <span className="rightbarInfoKey">Studied at: </span>
+          <span className="rightbarInfoValue">Shishu Niketan Higher Secondary School</span>
+        </div>
+
+        <div className="rightbarInfoItem">
+          <Home className="rightbarIcon"/>
+          <span className="rightbarInfoKey">Lives in: </span>
+          <span className="rightbarInfoValue">New York </span>
+        </div>
+
+        <div className="rightbarInfoItem">
+          <LocationOn className="rightbarIcon"/>
+          <span className="rightbarInfoKey">From: </span>
+          <span className="rightbarInfoValue">Pokhara </span>
+        </div>
+      </div>
+      </div>
+
+     
+      <div>
+      <h4 className="rightbarTitle"> Friends </h4>
+      <div className="rightbarFollowings">
+        <div className="rightbarFollowing">
+          <img src="assets/2.jpeg" alt="" className="rightbarFollowingImg" />
+          <span className="rightbarFollowingName">Shreesha Khadka</span>
+        </div>
+
+        <div className="rightbarFollowing">
+          <img src="assets/2.jpeg" alt="" className="rightbarFollowingImg" />
+          <span className="rightbarFollowingName">Shreesha Khadka</span>
+        </div>
+
+        <div className="rightbarFollowing">
+          <img src="assets/1.jpg" alt="" className="rightbarFollowingImg" />
+          <span className="rightbarFollowingName">Shreesha Khadka</span>
+        </div>
+
+        <div className="rightbarFollowing">
+          <img src="assets/1.jpg" alt="" className="rightbarFollowingImg" />
+          <span className="rightbarFollowingName">Shreesha Khadka</span>
+        </div>
+
+        <div className="rightbarFollowing">
+          <img src="assets/2.jpeg" alt="" className="rightbarFollowingImg" />
+          <span className="rightbarFollowingName">Shreesha Khadka</span>
+        </div>
+
+        <div className="rightbarFollowing">
+          <img src="assets/2.jpeg" alt="" className="rightbarFollowingImg" />
+          <span className="rightbarFollowingName">Shreesha Khadka</span>
+        </div>
+      </div>
+
+      </div>
+      
+
+
+      
+      </>
+    
+    )
+  }
+  return (
+    <div className="rightbar">
+      <div className="rightbarWrapper">
+       {profile ? <ProfileRightbar/> : <HomeRightbar/>}
 
         
       </div>

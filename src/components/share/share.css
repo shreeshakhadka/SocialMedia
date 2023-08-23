@@ -24,8 +24,8 @@
     border: none;
     width: 80%;
 }
-.shareInput.focus{
-    border: none;
+.shareInput:focus{
+    outline: none;
 }
 
 .shareHr{
