@@ -16,10 +16,10 @@ export default function RightBar() {
         <ul className="rightbarFriendList">
           <li className="rightbarFriend">
             <div className="rightbarProfileImgContainer">
-            {/* <span className="Online"></span> */}
+              <span className="Online"></span>
               <img 
               className="rightbarProfileImg" 
-              src="assets/2.jpeg" 
+              src="/assets/2.jpeg" 
               alt=""
               />
             </div>
@@ -28,7 +28,7 @@ export default function RightBar() {
 
           <li className="rightbarFriend">
             <div className="rightbarProfileImgContainer">
-            {/* <span className="Online"></span> */}
+            <span className="Online"></span>
               <img 
               className="rightbarProfileImg" 
               src="assets/2.jpeg" 
@@ -41,7 +41,7 @@ export default function RightBar() {
           
           <li className="rightbarFriend">
             <div className="rightbarProfileImgContainer">
-            {/* <span className="Online"></span> */}
+            <span className="Online"></span>
               <img 
               className="rightbarProfileImg" 
               src="assets/2.jpeg" 
@@ -53,7 +53,7 @@ export default function RightBar() {
 
           <li className="rightbarFriend">
             <div className="rightbarProfileImgContainer">
-            {/* <span className="Online"></span> */}
+            <span className="Online"></span>
               <img 
               className="rightbarProfileImg" 
               src="assets/2.jpeg" 
