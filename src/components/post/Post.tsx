@@ -1,15 +1,23 @@
 import { useState } from "react"
 import "./post.css"
-import {MoreVert} from "@mui/icons-material"
+import { IconButton } from "@mui/material"
+import {MoreVert, Delete, Edit} from "@mui/icons-material"
 
 
-export default function Post() {
-    const[like,setLike] = useState(1)
-    const[isLiked,setIsLiked] = useState(false)
+export default function Post(props) {
+    const [like,setLike] = useState(1)
+    const [isLiked,setIsLiked] = useState(false)
+    const [post,setPost] = useState([]);
 
     const likeHandler =() =>{
         setLike(isLiked ? like-1 : like+1)
         setIsLiked(!isLiked)
+    }
+    const handleDelete =() =>{
+        const confirmDelete = window.confirm("Are you sure you want to delete the post? ");
+        if(confirmDelete){
+            props.onDelete();
+        }
     }
 
   return (
@@ -23,14 +31,19 @@ export default function Post() {
                 </div>
                 <div className="postTopRight">
                     <MoreVert/>
+                    <IconButton onClick={handleDelete}>
+                        <Delete/>
+
+                    </IconButton>
+                    <Edit/>
 
                 </div>
 
             </div>
 
             <div className="postCenter">
-                <span className="postText">Hey! Its my first post</span>
-                <img className="postImg" src="assets/2.jpg" alt=""/>
+                <span className="postText">{props.post.value}</span>
+                <img className="postImg" src={props.post.file} alt=""/>
             </div>
             <div className="postBottom">
                 <div className="postBottomLeft">
