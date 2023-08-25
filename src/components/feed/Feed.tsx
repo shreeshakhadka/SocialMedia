@@ -30,14 +30,7 @@ export default function Feed() {
           onDelete={() => handleDelete(index)}
         />
       ))}
-      
-
-        {/* <Post />
-        <Post/>
-        <Post/>
-        <Post/>
-        <Post/>
-        <Post/> */}
+    
 
       </div>
     </div>

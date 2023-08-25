@@ -32,7 +32,6 @@ export default function Share(props) {
             </div>
             <hr className="shareHr"/>
             <form className="shareBottom" onSubmit={handleSubmit} >
-                {/* <input type="text" onChange={(e) =>setTodo(e.target.value)} value={todo}/> */}
                 <div className="shareOptions">
 
                     <div className="shareOption">

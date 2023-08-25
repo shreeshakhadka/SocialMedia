@@ -10,6 +10,7 @@ export default function Post(props) {
     const [isEditing, setIsEditing] = useState(false);
     const [editedText, setEditedText] = useState(props.post.value);
     const [editedImage, setEditedImage] = useState(props.post.file);
+    
 
     const likeHandler =() =>{
         setLike(isLiked ? like-1 : like+1)
